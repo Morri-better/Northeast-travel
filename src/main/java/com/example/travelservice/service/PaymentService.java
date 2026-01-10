@@ -155,7 +155,7 @@ public class PaymentService {
                         .set(Order::getUpdatedAt, now)
         );
         
-        if (orderUpdated == 0) {// TODO 支付回调order的抛异常问题，考虑一下，因为没有真正的支付功能
+        if (orderUpdated == 0) {// TODO 支付回调order的抛异常问题，考虑一下，因为没有真正的支付功能dd
             throw new BusinessException(ErrorCode.BIZ_ERROR,
                     "订单状态异常，无法完成支付：orderId=" + payment.getOrderId());
         }
