@@ -47,7 +47,7 @@ public class PriceService {
      * @throws IllegalArgumentException 当产品类型不支持时抛出异常
      */
     private BigDecimal getUnitPrice(ProductType productType) {
-        // TODO priceservice有问题，价格暂时写死了，等到旅游团增加了以后再添加
+        // TODO priceservice有问题，价格暂时写死了，等到旅游团增加了以后再添加dd
         if (productType == ProductType.TOUR) {
             return TOUR_PRICE;
         } else if (productType == ProductType.PRODUCT) {
