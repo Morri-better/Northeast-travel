@@ -7,6 +7,7 @@ import com.example.travelservice.common.ErrorCode;
 import com.example.travelservice.common.enums.OrderStatus;
 import com.example.travelservice.common.enums.PayStatus;
 import com.example.travelservice.common.enums.PayType;
+import com.example.travelservice.domain.event.PaymentSuccessEvent;
 import com.example.travelservice.dto.request.CreatePaymentRequest;
 import com.example.travelservice.dto.request.PaymentCallbackRequest;
 import com.example.travelservice.dto.response.CreatePaymentResponse;
@@ -17,6 +18,7 @@ import com.example.travelservice.mapper.OrderMapper;
 import com.example.travelservice.mapper.PaymentMapper;
 import com.example.travelservice.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,11 +30,12 @@ import java.time.LocalDateTime;
 @Service
 @RequiredArgsConstructor
 public class PaymentService {
-    
+
     private final PaymentRepository paymentRepository;
     private final OrderService orderService;
     private final PaymentMapper paymentMapper;
     private final OrderMapper orderMapper;
+    private final ApplicationEventPublisher eventPublisher;
     
     /**
      * 创建支付记录
@@ -155,12 +158,15 @@ public class PaymentService {
                         .set(Order::getUpdatedAt, now)
         );
         
-        if (orderUpdated == 0) {// TODO 支付回调order的抛异常问题，考虑一下，因为没有真正的支付功能dd
+        if (orderUpdated == 0) {
             throw new BusinessException(ErrorCode.BIZ_ERROR,
                     "订单状态异常，无法完成支付：orderId=" + payment.getOrderId());
         }
-        
+
         Order order = orderMapper.selectById(payment.getOrderId());
+        //领域事件，事务提交后执行
+        eventPublisher.publishEvent(new PaymentSuccessEvent(order.getId(), payment.getPayNo()));
+
         return PaymentCallbackResponse.builder()
                 .orderId(order.getId())
                 .orderStatus(order.getStatus())

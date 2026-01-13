@@ -1,41 +1,46 @@
-2026-01-11 14:25:07.629 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 61340 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
-2026-01-11 14:25:07.633 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
-2026-01-11 14:25:07.635 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-11 14:25:08.520 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-11 14:25:08.524 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-01-11 14:25:08.548 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2026-01-11 14:25:08.978 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2026-01-11 14:25:08.987 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2026-01-11 14:25:08.988 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
-2026-01-11 14:25:09.126 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2026-01-11 14:25:09.126 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1421 ms
-2026-01-11 14:25:09.301 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
-2026-01-11 14:25:11.458 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-01-11 14:25:11.484 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2026-01-11 14:25:11.493 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 4.348 seconds (JVM running for 5.312)
-2026-01-11 14:43:46.145 [http-nio-8080-exec-1] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-11 14:43:46.145 [http-nio-8080-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-01-11 14:43:46.150 [http-nio-8080-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
-2026-01-11 14:47:45.667 [http-nio-8080-exec-7] [3e814b32a60a4ac4b6bacb8cb4c380c5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-01-11 14:47:46.284 [http-nio-8080-exec-7] [3e814b32a60a4ac4b6bacb8cb4c380c5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-01-11 15:00:23.673 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m37s274ms841µs900ns).
-2026-01-11 15:16:30.407 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-01-11 15:16:30.419 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-01-11 15:16:37.137 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 37396 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
-2026-01-11 15:16:37.138 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
-2026-01-11 15:16:37.138 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-11 15:16:37.712 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-11 15:16:37.714 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-01-11 15:16:37.727 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2026-01-11 15:16:38.035 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2026-01-11 15:16:38.042 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2026-01-11 15:16:38.042 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
-2026-01-11 15:16:38.137 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2026-01-11 15:16:38.137 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 967 ms
-2026-01-11 15:16:38.274 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
-2026-01-11 15:16:40.239 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-01-11 15:16:40.272 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
-2026-01-11 15:16:40.283 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 3.385 seconds (JVM running for 4.328)
-2026-01-11 15:16:47.480 [http-nio-8080-exec-2] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-11 15:16:47.480 [http-nio-8080-exec-2] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-01-11 15:16:47.482 [http-nio-8080-exec-2] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-13 11:31:57.463 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 11008 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-01-13 11:31:57.467 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-01-13 11:31:57.469 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 11:31:58.454 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-13 11:31:58.456 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-13 11:31:58.473 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-01-13 11:31:58.873 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-01-13 11:31:58.880 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-13 11:31:58.880 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-01-13 11:31:58.993 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-01-13 11:31:58.993 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1478 ms
+2026-01-13 11:31:59.178 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-01-13 11:32:01.343 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-01-13 11:32:01.371 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-01-13 11:32:01.382 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 4.192 seconds (JVM running for 5.033)
+2026-01-13 11:36:43.169 [http-nio-8080-exec-2] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-13 11:36:43.169 [http-nio-8080-exec-2] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-13 11:36:43.172 [http-nio-8080-exec-2] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-13 11:36:43.387 [http-nio-8080-exec-2] [79f2f068bb4342edabf745202ab6f3b3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-13 11:36:44.047 [http-nio-8080-exec-2] [79f2f068bb4342edabf745202ab6f3b3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-13 11:54:25.535 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m41s314ms354µs500ns).
+2026-01-13 11:56:09.683 [http-nio-8080-exec-5] [2e3b303da9854016a7689a3d2eca4e5e] WARN  c.e.t.common.exception.GlobalExceptionHandler - 业务异常 [traceId: 2e3b303da9854016a7689a3d2eca4e5e]: 订单状态不允许创建支付
+2026-01-13 11:56:32.208 [http-nio-8080-exec-6] [3164e4e9b4ff4328b3f31adaabb3a7d2] WARN  c.e.t.common.exception.GlobalExceptionHandler - 业务异常 [traceId: 3164e4e9b4ff4328b3f31adaabb3a7d2]: 订单不存在
+2026-01-13 12:06:04.170 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-13 12:06:04.179 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-13 12:06:09.996 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 33144 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-01-13 12:06:09.997 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-01-13 12:06:09.998 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 12:06:10.487 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-13 12:06:10.489 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-13 12:06:10.499 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2026-01-13 12:06:10.776 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-01-13 12:06:10.779 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-13 12:06:10.779 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-01-13 12:06:10.860 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-01-13 12:06:10.860 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+2026-01-13 12:06:11.011 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-01-13 12:06:12.571 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-01-13 12:06:12.596 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-01-13 12:06:12.606 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 2.822 seconds (JVM running for 3.642)
+2026-01-13 12:09:53.886 [http-nio-8080-exec-1] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-13 12:09:53.886 [http-nio-8080-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-13 12:09:53.887 [http-nio-8080-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-13 12:09:54.040 [http-nio-8080-exec-1] [ef31e97506384c98ae11de5b061face6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-13 12:09:54.347 [http-nio-8080-exec-1] [ef31e97506384c98ae11de5b061face6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-13 12:09:54.688 [http-nio-8080-exec-1] [ef31e97506384c98ae11de5b061face6] INFO  c.e.t.domain.listener.PaymentSuccessListener - 事务提交后执行, orderId=2, payNo=P1768276623681201092
