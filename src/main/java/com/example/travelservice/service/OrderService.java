@@ -93,6 +93,7 @@ public class OrderService {
      * @param orderId 订单ID
      */
     @Transactional(rollbackFor = Exception.class)
+    // TODO 考虑是否去除
     public void updateOrderToPaid(Long orderId) {
         Order order = getOrderById(orderId);
         order.setStatus(OrderStatus.PAID);
