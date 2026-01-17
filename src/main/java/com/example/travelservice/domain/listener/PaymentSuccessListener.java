@@ -7,6 +7,7 @@ import com.example.travelservice.entity.Order;
 import com.example.travelservice.mapper.OrderMapper;
 import com.example.travelservice.mapper.ProductsMapper;
 import com.example.travelservice.mapper.ToursMapper;
+import com.example.travelservice.service.StockDeductLogService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -22,12 +23,13 @@ public class PaymentSuccessListener {
     private final OrderMapper orderMapper;
     private final ToursMapper toursMapper;
     private final ProductsMapper productsMapper;
+    private final StockDeductLogService stockDeductLogService;
 
     @Transactional
     @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
     public void onPaymentSuccess(PaymentSuccessEvent event) {
-
         Long orderId = event.getOrderId();
+        String payNo = event.getPayNo();
 
         Order order = orderMapper.selectById(orderId);
         if (order == null) {
@@ -37,28 +39,35 @@ public class PaymentSuccessListener {
 
         Integer quantity = order.getQuantity();
         ProductType productType = order.getProductType();
+        Long itemId = order.getProductId();
+        String itemType = productType.name();
 
         try {
+            int updated;
             switch (productType) {
                 case TOUR:
-                    deductTourStock(order.getProductId(), quantity);
+                    updated = deductTourStock(itemId, quantity);
                     break;
                 case PRODUCT:
-                    deductProductStock(order.getProductId(), quantity);
+                    updated = deductProductStock(itemId, quantity);
                     break;
                 default:
-                    log.warn("[扣库存] 不支持的 productType={}, orderId={}", productType, orderId);
+                    throw new IllegalArgumentException("unknown itemType: " + itemType);
             }
 
+            if (updated == 0) {
+                stockDeductLogService.recordFail(orderId, payNo, itemType, itemId, quantity, "deductStock updated=0 (maybe not enough stock)");
+                return;
+            }
+
+            stockDeductLogService.markSuccess(orderId, itemType, itemId);
+
         } catch (Exception e) {
-            log.error(
-                    "【扣库存失败】orderId={}, productType={}, productId={}, quantity={}",
-                    orderId, productType, order.getProductId(), quantity, e
-            );
+            stockDeductLogService.recordFail(orderId, payNo, itemType, itemId, quantity, e.getMessage());
         }
     }
 
-    private void deductTourStock(Long tourId, Integer quantity) {
+    private int deductTourStock(Long tourId, Integer quantity) {
         int updated = toursMapper.update(
                 null,
                 Wrappers.<com.example.travelservice.entity.Tours>lambdaUpdate()
@@ -72,9 +81,10 @@ public class PaymentSuccessListener {
                     "旅游团库存不足或不存在，tourId=" + tourId
             );
         }
+        return updated;
     }
 
-    private void deductProductStock(Long productId, Integer quantity) {
+    private int deductProductStock(Long productId, Integer quantity) {
         int updated = productsMapper.update(
                 null,
                 Wrappers.<com.example.travelservice.entity.Products>lambdaUpdate()
@@ -88,5 +98,6 @@ public class PaymentSuccessListener {
                     "商品库存不足或不存在，productId=" + productId
             );
         }
+        return updated;
     }
 }
