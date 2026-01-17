@@ -18,11 +18,9 @@ import java.util.List;
 @Component
 @RequiredArgsConstructor
 public class StockCompensationJob {
-
     private final StockDeductLogMapper stockDeductLogMapper;
     private final ToursMapper toursMapper;
     private final ProductsMapper productsMapper;
-
     @Scheduled(fixedDelay = 60000)
     public void compensate() {
         List<StockDeductLog> logs = stockDeductLogMapper.pickDue(100);
