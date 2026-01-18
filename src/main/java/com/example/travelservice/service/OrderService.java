@@ -86,20 +86,6 @@ public class OrderService {
         return order;
     }
     
-    /**
-     * 更新订单状态为已支付
-     * 当支付成功后调用此方法更新订单状态和支付时间
-     * 
-     * @param orderId 订单ID
-     */
-    @Transactional(rollbackFor = Exception.class)
-    // TODO 考虑是否去除
-    public void updateOrderToPaid(Long orderId) {
-        Order order = getOrderById(orderId);
-        order.setStatus(OrderStatus.PAID);
-        order.setPaidAt(LocalDateTime.now());
-        orderRepository.updateById(order);
-    }
     
     /**
      * 生成订单号
