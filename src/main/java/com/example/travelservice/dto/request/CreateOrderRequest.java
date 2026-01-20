@@ -6,6 +6,9 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+/**
+ * 创建订单请求类
+ */
 @Data
 public class CreateOrderRequest {
     

@@ -10,6 +10,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * 旅游团实体类
+ */
 @Data
 @TableName("tours")
 public class Tours {

@@ -5,6 +5,9 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+/**
+ * 创建支付请求类
+ */
 @Data
 public class CreatePaymentRequest {
     

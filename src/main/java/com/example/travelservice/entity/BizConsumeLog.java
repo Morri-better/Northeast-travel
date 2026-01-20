@@ -7,6 +7,9 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+/**
+ * 业务消费日志实体类
+ */
 @Data
 @TableName("biz_consume_log")
 public class BizConsumeLog {

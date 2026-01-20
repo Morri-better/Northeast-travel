@@ -501,3 +501,56 @@ For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
 2026-01-20 14:53:58.621 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
 2026-01-20 14:54:00.685 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-20 14:54:00.690 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-20 21:13:05.096 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 68916 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-01-20 21:13:05.097 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-01-20 21:13:05.097 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 21:13:05.668 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20 21:13:05.669 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20 21:13:05.681 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-01-20 21:13:05.841 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$9cfbb76c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 21:13:05.902 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 21:13:05.919 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 21:13:05.919 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$f435ae08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 21:13:06.083 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-01-20 21:13:06.088 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 21:13:06.088 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-01-20 21:13:06.229 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-01-20 21:13:06.229 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1105 ms
+2026-01-20 21:13:06.329 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-01-20 21:13:07.733 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-01-20 21:13:12.273 [main] [] ERROR o.a.r.s.a.ListenerContainerConfiguration - Started container failed. DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:671)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:500)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:1206)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:969)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:737)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.start(DefaultRocketMQListenerContainer.java:343)
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:106)
+	at org.apache.rocketmq.spring.annotation.RocketMQMessageListenerBeanPostProcessor.postProcessAfterInitialization(RocketMQMessageListenerBeanPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.travelservice.application.TravelServiceApplication.main(TravelServiceApplication.java:14)
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:473)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1785)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1776)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:610)
+	... 25 common frames omitted
+2026-01-20 21:13:12.275 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+2026-01-20 21:13:12.279 [main] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}

@@ -12,6 +12,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * 订单实体类
+ */
 @Data
 @TableName("orders")
 public class Order {

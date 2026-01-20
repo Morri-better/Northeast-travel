@@ -4,6 +4,9 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * 聊天请求类
+ */
 @Data
 public class ChatRequest {
 

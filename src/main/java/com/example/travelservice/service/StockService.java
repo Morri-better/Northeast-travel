@@ -9,6 +9,10 @@ import com.example.travelservice.mapper.ToursMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+/**
+ * 库存服务类
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor

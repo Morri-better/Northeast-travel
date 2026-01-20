@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * 聊天响应类
+ */
 @Data
 @NoArgsConstructor
 public class ChatResponse implements Serializable {

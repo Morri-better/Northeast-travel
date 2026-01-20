@@ -6,6 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * 创建支付响应类
+ */
 @Data
 @Builder
 @NoArgsConstructor
