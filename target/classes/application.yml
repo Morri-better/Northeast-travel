@@ -53,3 +53,9 @@ logging:
     max-size: 10MB
     max-history: 30
 
+
+rocketmq:
+  name-server: 192.168.88.130:9876
+  producer:
+    group: boot-producer-group
+

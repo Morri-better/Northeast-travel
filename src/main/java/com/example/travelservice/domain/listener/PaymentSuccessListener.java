@@ -24,6 +24,7 @@ public class PaymentSuccessListener {
     private final ToursMapper toursMapper;
     private final ProductsMapper productsMapper;
     private final StockDeductLogService stockDeductLogService;
+    // TODO 考虑是否下线这个监听器，已经没有它需要解决的问题
 
     @Transactional
     @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)

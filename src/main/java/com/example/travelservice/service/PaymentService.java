@@ -7,7 +7,6 @@ import com.example.travelservice.common.ErrorCode;
 import com.example.travelservice.common.enums.OrderStatus;
 import com.example.travelservice.common.enums.PayStatus;
 import com.example.travelservice.common.enums.PayType;
-import com.example.travelservice.domain.event.PaymentSuccessEvent;
 import com.example.travelservice.dto.request.CreatePaymentRequest;
 import com.example.travelservice.dto.request.PaymentCallbackRequest;
 import com.example.travelservice.dto.response.CreatePaymentResponse;
@@ -17,16 +16,13 @@ import com.example.travelservice.entity.Payment;
 import com.example.travelservice.mapper.OrderMapper;
 import com.example.travelservice.mapper.PaymentMapper;
 import com.example.travelservice.repository.PaymentRepository;
+import com.example.travelservice.service.OutboxEventService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
-/**
- * 支付服务类，提供支付创建、查询和回调处理等功能
- */
 @Service
 @RequiredArgsConstructor
 public class PaymentService {
@@ -35,7 +31,7 @@ public class PaymentService {
     private final OrderService orderService;
     private final PaymentMapper paymentMapper;
     private final OrderMapper orderMapper;
-    private final ApplicationEventPublisher eventPublisher;
+    private final OutboxEventService outboxEventService;
     
     /**
      * 创建支付记录
@@ -112,7 +108,7 @@ public class PaymentService {
                     .payStatus(payment.getPayStatus())
                     .build();
         }
-        
+        // TODO 两次支付判断不知道是否多余，需要判断一下
         if (request.getSuccess() == null || !request.getSuccess()) {
             Order order = orderMapper.selectById(payment.getOrderId());
             if (order == null) {
@@ -164,8 +160,12 @@ public class PaymentService {
         }
 
         Order order = orderMapper.selectById(payment.getOrderId());
-        //领域事件，事务提交后执行
-        eventPublisher.publishEvent(new PaymentSuccessEvent(order.getId(), payment.getPayNo()));
+        outboxEventService.savePaymentSuccessEvent(
+                payment.getPayNo(),
+                order.getId(),
+                order.getProductId(),
+                order.getQuantity()
+        );
 
         return PaymentCallbackResponse.builder()
                 .orderId(order.getId())
