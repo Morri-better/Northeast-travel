@@ -462,3 +462,42 @@ For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
 2026-01-20 13:27:42.631 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
 2026-01-20 13:27:44.693 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-20 13:27:44.709 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-20 13:46:33.324 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 69564 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-01-20 13:46:33.326 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-01-20 13:46:33.326 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 13:46:34.187 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-20 13:46:34.189 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-20 13:46:34.212 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-01-20 13:46:34.484 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$82509660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 13:46:34.571 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 13:46:34.590 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 13:46:34.591 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$d98a8cfc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-01-20 13:46:34.813 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-01-20 13:46:34.820 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 13:46:34.820 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-01-20 13:46:34.968 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-01-20 13:46:34.969 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1609 ms
+2026-01-20 13:46:35.114 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-01-20 13:46:36.748 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-01-20 13:46:38.881 [main] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-01-20 13:46:38.883 [main] [] INFO  o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:stockDeductConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2026-01-20 13:46:39.518 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-01-20 13:46:39.557 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-01-20 13:46:39.571 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 6.514 seconds (JVM running for 7.482)
+2026-01-20 13:46:39.616 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-20 13:46:39.918 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-20 13:46:40.365 [RMI TCP Connection(1)-192.168.1.5] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 13:46:40.365 [RMI TCP Connection(1)-192.168.1.5] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 13:46:40.367 [RMI TCP Connection(1)-192.168.1.5] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-20 14:22:14.638 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
+2026-01-20 14:22:14.642 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:9876] result: true
+2026-01-20 14:22:14.644 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:9876] result: true
+2026-01-20 14:22:14.653 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
+2026-01-20 14:22:35.366 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s801ms741µs500ns).
+2026-01-20 14:53:58.128 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:9876] result: true
+2026-01-20 14:53:58.129 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
+2026-01-20 14:53:58.613 [SpringApplicationShutdownHook] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-01-20 14:53:58.620 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:9876] result: true
+2026-01-20 14:53:58.621 [NettyClientSelector_1] [] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[192.168.88.130:10911] result: true
+2026-01-20 14:54:00.685 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-20 14:54:00.690 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
