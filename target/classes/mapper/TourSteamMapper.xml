@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.travelservice.mapper.TourSteamMapper">
+    <select id="select" resultType="com.example.travelservice.dto.response.TourSteamResponse">
+        SELECT * FROM tour_steam
+        <where>
+            <!-- 状态过滤：只查询可报名的团（这是基础业务逻辑） -->
+            status IN ('OPEN', 'GROUPED')
+
+            <!-- 条件1：始发地 -->
+            <if test="departureCity != null and departureCity != ''">
+                AND departure_city LIKE CONCAT('%', #{departureCity}, '%')
+            </if>
+
+            <!-- 条件2：目的地 -->
+            <if test="destination != null and destination != ''">
+                AND destination LIKE CONCAT('%', #{destination}, '%')
+            </if>
+
+            <!-- 条件3和4：出发时间和截止时间组成的时间范围 -->
+            <if test="startDate != null and endDate != null">
+                AND departure_date BETWEEN #{startDate} AND #{endDate}
+            </if>
+            <if test="startDate != null and endDate == null">
+                AND departure_date >= #{startDate}
+            </if>
+            <if test="startDate == null and endDate != null">
+                AND departure_date &lt;= #{endDate}
+            </if>
+
+            <!-- 条件5：旅行人数 -->
+            <if test="travelPeople != null">
+                AND available_seats >= #{travelPeople}
+            </if>
+        </where>
+        ORDER BY departure_date ASC, create_time DESC
+    </select>
+</mapper>
