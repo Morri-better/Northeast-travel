@@ -6,9 +6,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * AI聊天响应类
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

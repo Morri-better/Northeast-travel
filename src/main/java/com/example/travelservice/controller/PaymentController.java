@@ -18,15 +18,15 @@ import javax.validation.Valid;
 @RequestMapping("/payments/mock")
 @RequiredArgsConstructor
 public class PaymentController extends BaseController {
-    
+
     private final PaymentService paymentService;
-    
+
     @PostMapping("/pay")
     public ApiResponse<CreatePaymentResponse> createPayment(@Valid @RequestBody CreatePaymentRequest request) {
         CreatePaymentResponse response = paymentService.createPayment(request);
         return success(response);
     }
-    
+
     @PostMapping("/callback")
     public ApiResponse<PaymentCallbackResponse> callback(@Valid @RequestBody PaymentCallbackRequest request) {
         PaymentCallbackResponse response = paymentService.handleCallback(request);

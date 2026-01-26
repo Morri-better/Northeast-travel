@@ -11,9 +11,6 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-/**
- * 支付实体类
- */
 @Data
 @TableName("payment")
 public class Payment {

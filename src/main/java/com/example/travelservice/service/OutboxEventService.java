@@ -12,9 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Outbox事件服务类
- */
 @Service
 @RequiredArgsConstructor
 public class OutboxEventService {

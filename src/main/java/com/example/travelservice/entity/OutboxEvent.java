@@ -7,9 +7,6 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-/**
- * Outbox事件实体类
- */
 @Data
 @TableName("outbox_event")
 public class OutboxEvent {

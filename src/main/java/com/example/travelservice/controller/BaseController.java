@@ -8,7 +8,7 @@ public class BaseController {
         return ApiResponse.success();
     }
     
-    protected <T> ApiResponse<T> success(T data) {
+    protected static <T> ApiResponse<T> success(T data) {
         return ApiResponse.success(data);
     }
     

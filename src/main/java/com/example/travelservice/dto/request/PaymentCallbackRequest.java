@@ -6,9 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 
-/**
- * 支付回调请求类
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

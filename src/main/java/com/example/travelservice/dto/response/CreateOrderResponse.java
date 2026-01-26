@@ -8,9 +8,6 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-/**
- * 创建订单响应类
- */
 @Data
 @Builder
 @NoArgsConstructor

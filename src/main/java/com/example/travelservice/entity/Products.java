@@ -10,9 +10,6 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-/**
- * 文创商品实体类
- */
 @Data
 @TableName("products")
 public class Products {

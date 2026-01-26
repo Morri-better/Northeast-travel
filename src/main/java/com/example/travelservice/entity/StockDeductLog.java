@@ -5,9 +5,6 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-/**
- * 库存扣减日志实体类
- */
 @Data
 @TableName("stock_deduct_log")
 public class StockDeductLog {

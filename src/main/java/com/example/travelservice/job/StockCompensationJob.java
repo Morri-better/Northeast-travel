@@ -14,9 +14,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * 库存补偿定时任务
- */
 @Slf4j
 @Component
 @RequiredArgsConstructor
