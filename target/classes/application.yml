@@ -13,7 +13,7 @@ spring:
     redis:
       host: localhost
       port: 6379
-      password: 
+      password: 123456
       database: 0
       timeout: 3000ms
       lettuce:
@@ -55,7 +55,15 @@ logging:
 
 
 rocketmq:
-  name-server: 192.168.88.130:9876
+  name-server:  192.168.88.130:9876
   producer:
     group: boot-producer-group
 
+sky:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    user-secret-key: itcast
+    # 设置jwt过期时间
+    user-ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    user-token-name: token

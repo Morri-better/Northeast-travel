@@ -19,7 +19,7 @@ public class ContentController extends BaseController{
     @Autowired
     private final ContentServer contentServer;
     @GetMapping
-    public ApiResponse<PageResult> getContent(ProductPageQueryRequest  request){
+    public ApiResponse<PageResult> getContent(@RequestBody ProductPageQueryRequest  request){
         log.info("分页条件: {}",request);
         PageResult pageResult =contentServer.select(request);
         return success(pageResult);

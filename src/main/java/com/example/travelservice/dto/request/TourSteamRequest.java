@@ -14,7 +14,7 @@ public class TourSteamRequest {
     private String destination;             // 目的地
     private Integer travelPeople;           // 旅行人数
 
-    private int page;
+    private Integer page;
 
-    private int pageSize;
+    private Integer pageSize;
 }

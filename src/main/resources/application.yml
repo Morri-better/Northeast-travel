@@ -4,8 +4,7 @@ spring:
   
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/Northeast-travel
-    url: jdbc:mysql://localhost:3306/BX
+    url: jdbc:mysql://localhost:3306/Northeast-travel
     username: root
     password: 1234
 

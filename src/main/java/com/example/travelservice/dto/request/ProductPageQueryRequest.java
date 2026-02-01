@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class ProductPageQueryRequest {
-    private int page;
+    private Integer page;
 
-    private int pageSize;
+    private Integer pageSize;
 }

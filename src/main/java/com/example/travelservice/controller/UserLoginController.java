@@ -46,10 +46,11 @@ public class UserLoginController extends BaseController{
     }
 
 
+    //TODO 做图形验证还是短信验证
     @PostMapping ("/login/password")
-    public ApiResponse<UserLoginResponse> login(@RequestBody UserLoginRequest request,HttpSession  session){
+    public ApiResponse<UserLoginResponse> login(@RequestBody UserLoginRequest request,HttpSession session){
         log.info("用户登录：{}", request);
-        User user = userService.login(request, session);
+        User user = userService.login(request,session);
 
         //登录成功后，生成jwt令牌
         Map<String, Object> claims = new HashMap<>();

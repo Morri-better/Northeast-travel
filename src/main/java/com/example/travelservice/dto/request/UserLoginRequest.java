@@ -7,5 +7,4 @@ public class UserLoginRequest {
         private String phone;
         private String password;
         private String captcha;
-
 }

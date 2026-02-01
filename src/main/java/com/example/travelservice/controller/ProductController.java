@@ -8,10 +8,7 @@ import com.example.travelservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/products")
@@ -20,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController extends BaseController{
     private final ProductService productService;
     @GetMapping
-    public ApiResponse<PageResult> getProducts(ProductPageQueryRequest  request){
+    public ApiResponse<PageResult> getProducts(@RequestBody ProductPageQueryRequest  request){
         log.info("获取分页信息: {}", request);
         PageResult pageResult = productService.getProducts(request);
         return success(pageResult);
