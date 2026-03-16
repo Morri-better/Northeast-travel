@@ -11,6 +11,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 @RequiredArgsConstructor
 public class OrderRepository {
+
+    // TODO 这个类的意义在哪，为什么不直接用OrderMapper
     
     private final OrderMapper orderMapper;
     

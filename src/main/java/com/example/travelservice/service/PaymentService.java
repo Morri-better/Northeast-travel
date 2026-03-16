@@ -41,6 +41,7 @@ public class PaymentService {
      * @return 创建支付的响应结果，包含支付ID、支付号和支付状态
      * @throws BusinessException 当订单状态不允许创建支付或支付记录创建失败时抛出业务异常
      */
+// TODO 缺少幂等性检查（已存在的 INIT 支付未处理）
     @Transactional(rollbackFor = Exception.class)
     public CreatePaymentResponse createPayment(CreatePaymentRequest request) {
         Order order = orderService.getOrderById(request.getOrderId());
