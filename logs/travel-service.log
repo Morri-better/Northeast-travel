@@ -1,21 +1,21 @@
-2026-03-04 08:43:38.908 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 18048 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
-2026-03-04 08:43:38.914 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
-2026-03-04 08:43:38.914 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2026-03-04 08:43:39.665 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-03-04 08:43:39.668 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-03-04 08:43:39.681 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2026-03-04 08:43:39.900 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$9623a65d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2026-03-04 08:43:39.964 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2026-03-04 08:43:39.976 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2026-03-04 08:43:39.977 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$ed5d9cf9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2026-03-04 08:43:40.184 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2026-03-04 08:43:40.190 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2026-03-04 08:43:40.190 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
-2026-03-04 08:43:40.341 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2026-03-04 08:43:40.341 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1384 ms
-2026-03-04 08:43:40.486 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
-2026-03-04 08:43:42.688 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
-2026-03-04 08:43:48.131 [main] [] ERROR o.a.r.s.a.ListenerContainerConfiguration - Started container failed. DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-04-24 15:13:51.334 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 56512 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:13:51.338 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:13:51.339 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:13:52.390 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:13:52.393 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:13:52.420 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:13:52.699 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$2a3dfe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:13:52.784 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:13:52.802 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:13:52.802 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$59ddd681] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:13:53.117 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:13:53.127 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:13:53.127 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:13:53.325 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:13:53.325 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1932 ms
+2026-04-24 15:13:53.476 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:13:56.339 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:14:01.908 [main] [] ERROR o.a.r.s.a.ListenerContainerConfiguration - Started container failed. DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
 java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
 	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:671)
 	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:500)
@@ -49,5 +49,368 @@ Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: conn
 	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1776)
 	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:610)
 	... 25 common frames omitted
-2026-03-04 08:43:48.134 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
-2026-03-04 08:43:48.138 [main] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-04-24 15:14:01.909 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+2026-04-24 15:14:01.912 [main] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-04-24 15:14:03.993 [main] [] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-24 15:14:04.006 [main] [] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-04-24 15:14:04.032 [main] [] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.travelservice.application.TravelServiceApplication.main(TravelServiceApplication.java:14)
+Caused by: java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:109)
+	at org.apache.rocketmq.spring.annotation.RocketMQMessageListenerBeanPostProcessor.postProcessAfterInitialization(RocketMQMessageListenerBeanPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:671)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:500)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:1206)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:969)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:737)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.start(DefaultRocketMQListenerContainer.java:343)
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:106)
+	... 19 common frames omitted
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:473)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1785)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1776)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:610)
+	... 25 common frames omitted
+2026-04-24 15:20:53.577 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 8204 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:20:53.578 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:20:53.580 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:20:54.210 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:20:54.212 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:20:54.222 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:20:54.406 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$4d66b8bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:20:54.469 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:20:54.481 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:20:54.481 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$a4a0af59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:20:54.654 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:20:54.659 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:20:54.659 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:20:54.813 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:20:54.813 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2026-04-24 15:20:54.924 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:21:00.641 [main] [] ERROR o.a.r.s.a.ListenerContainerConfiguration - Started container failed. DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:671)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:500)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:1206)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:969)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:737)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.start(DefaultRocketMQListenerContainer.java:343)
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:106)
+	at org.apache.rocketmq.spring.annotation.RocketMQMessageListenerBeanPostProcessor.postProcessAfterInitialization(RocketMQMessageListenerBeanPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.travelservice.application.TravelServiceApplication.main(TravelServiceApplication.java:14)
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:473)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1785)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1776)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:610)
+	... 25 common frames omitted
+2026-04-24 15:21:00.642 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+2026-04-24 15:21:00.645 [main] [] INFO  o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='stock-deduct-consumer-group', namespace='', nameServer='192.168.88.130:9876', topic='stock_deduct', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false, instanceName=DEFAULT}
+2026-04-24 15:21:02.720 [main] [] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-24 15:21:02.733 [main] [] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-04-24 15:21:02.753 [main] [] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockDeductConsumer' defined in file [D:\东北旅游\Northeast-travel\target\classes\com\example\travelservice\mq\StockDeductConsumer.class]: Initialization of bean failed; nested exception is java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.travelservice.application.TravelServiceApplication.main(TravelServiceApplication.java:14)
+Caused by: java.lang.RuntimeException: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:109)
+	at org.apache.rocketmq.spring.annotation.RocketMQMessageListenerBeanPostProcessor.postProcessAfterInitialization(RocketMQMessageListenerBeanPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:671)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:500)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:1206)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:969)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:737)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.start(DefaultRocketMQListenerContainer.java:343)
+	at org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration.registerContainer(ListenerContainerConfiguration.java:106)
+	... 19 common frames omitted
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to null failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:473)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1785)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1776)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:610)
+	... 25 common frames omitted
+2026-04-24 15:32:04.218 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 32948 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:32:04.220 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:32:04.220 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:32:04.822 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:32:04.823 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:32:04.836 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:32:05.014 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$5672a3e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:32:05.073 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:32:05.085 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:32:05.085 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$adac9a7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:32:05.260 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:32:05.265 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:32:05.265 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:32:05.421 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:32:05.421 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+2026-04-24 15:32:05.517 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:32:07.019 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 15:32:07.509 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:32:08.931 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 15:32:08.969 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 15:32:08.983 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 5.03 seconds (JVM running for 6.05)
+2026-04-24 15:32:09.000 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 15:32:09.350 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 15:32:10.061 [RMI TCP Connection(2)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 15:32:10.061 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 15:32:10.064 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-24 15:32:12.306 [boundedElastic-1] [] WARN  o.s.b.actuate.redis.RedisReactiveHealthIndicator - Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	... 15 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2026-04-24 15:33:06.377 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-24 15:33:06.389 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-24 15:33:09.343 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 1056 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:33:09.344 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:33:09.345 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:33:09.944 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:33:09.945 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:33:09.957 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:33:10.142 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$d3cc367a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:33:10.219 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:33:10.232 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:33:10.232 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$2b062d16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:33:10.414 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:33:10.421 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:33:10.421 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:33:10.592 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:33:10.592 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2026-04-24 15:33:10.709 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:33:12.246 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 15:33:12.745 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:33:14.072 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 15:33:14.106 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 15:33:14.118 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 5.036 seconds (JVM running for 6.179)
+2026-04-24 15:33:14.138 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 15:33:14.429 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 15:33:14.781 [RMI TCP Connection(1)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 15:33:14.781 [RMI TCP Connection(1)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 15:33:14.783 [RMI TCP Connection(1)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-24 15:33:42.156 [http-nio-8080-exec-2] [5b3fa2cd254f4e0d917c6a4b5879c5b7] WARN  org.springframework.web.servlet.PageNotFound - No mapping for POST /api/agent/chat
+2026-04-24 15:33:42.171 [http-nio-8080-exec-2] [] INFO  c.e.t.interceptor.JwtTokenAdminInterceptor - jwt校验:null
+2026-04-24 15:36:29.507 [http-nio-8080-exec-5] [298439606b76430db54a4c006b5e12d5] WARN  org.springframework.web.servlet.PageNotFound - No mapping for POST /api/agent/chat
+2026-04-24 15:36:29.509 [http-nio-8080-exec-5] [] INFO  c.e.t.interceptor.JwtTokenAdminInterceptor - jwt校验:null
+2026-04-24 15:36:42.042 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 61412 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:36:42.045 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:36:42.046 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:36:42.686 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:36:42.688 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:36:42.705 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:36:42.917 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$de4710c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:36:42.979 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:36:42.992 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:36:42.993 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$35810764] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:36:43.206 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:36:43.216 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:36:43.216 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:36:43.379 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:36:43.379 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1290 ms
+2026-04-24 15:36:43.496 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:36:44.964 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 15:36:44.964 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - JWT拦截器已禁用，所有接口无需认证
+2026-04-24 15:36:45.404 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:36:46.659 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 15:36:46.690 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 15:36:46.701 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 4.915 seconds (JVM running for 6.042)
+2026-04-24 15:36:46.716 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 15:36:47.005 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 15:36:47.718 [RMI TCP Connection(2)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 15:36:47.718 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 15:36:47.720 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-24 15:36:53.315 [http-nio-8080-exec-2] [726cb4e2c4a147aabbde72b7d2d5b71a] WARN  org.springframework.web.servlet.PageNotFound - No mapping for POST /api/agent/chat
+2026-04-24 15:37:30.286 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-24 15:37:30.297 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-24 15:37:37.202 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 41812 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:37:37.203 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:37:37.203 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:37:37.827 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:37:37.828 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:37:37.841 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:37:38.030 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$24882be1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:37:38.093 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:37:38.111 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:37:38.112 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$7bc2227d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:37:38.316 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:37:38.325 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:37:38.326 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:37:38.473 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:37:38.473 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1232 ms
+2026-04-24 15:37:38.591 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:37:40.323 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 15:37:40.324 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - JWT拦截器已禁用，所有接口无需认证
+2026-04-24 15:37:40.835 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:37:42.206 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 15:37:42.255 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 15:37:42.266 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 5.319 seconds (JVM running for 6.503)
+2026-04-24 15:37:42.282 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 15:37:42.614 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 15:37:43.144 [RMI TCP Connection(2)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 15:37:43.144 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 15:37:43.145 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-24 15:43:04.460 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-24 15:43:04.467 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-24 15:43:07.433 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 60656 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 15:43:07.435 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 15:43:07.436 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 15:43:08.063 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 15:43:08.066 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 15:43:08.083 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-04-24 15:43:08.300 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$3d88a8c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:43:08.365 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:43:08.377 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:43:08.377 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$94c29f5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 15:43:08.581 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 15:43:08.588 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 15:43:08.588 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 15:43:08.759 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 15:43:08.760 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+2026-04-24 15:43:08.861 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 15:43:10.470 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 15:43:10.470 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - JWT拦截器已禁用，所有接口无需认证
+2026-04-24 15:43:10.945 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 15:43:12.249 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 15:43:12.278 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 15:43:12.289 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 5.11 seconds (JVM running for 6.291)
+2026-04-24 15:43:12.300 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 15:43:12.600 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 15:43:13.143 [RMI TCP Connection(2)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 15:43:13.143 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 15:43:13.145 [RMI TCP Connection(2)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-24 16:27:14.393 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m1s363ms72µs200ns).
+2026-04-24 17:33:15.087 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m14ms408µs900ns).
+2026-04-24 18:27:41.529 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-24 18:27:41.537 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-24 18:27:50.855 [main] [] INFO  c.e.t.application.TravelServiceApplication - Starting TravelServiceApplication using Java 1.8.0_452 on Morri with PID 65072 (D:\东北旅游\Northeast-travel\target\classes started by 20406 in D:\东北旅游\Northeast-travel)
+2026-04-24 18:27:50.857 [main] [] DEBUG c.e.t.application.TravelServiceApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2026-04-24 18:27:50.858 [main] [] INFO  c.e.t.application.TravelServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-24 18:27:51.658 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-24 18:27:51.660 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-24 18:27:51.677 [main] [] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-24 18:27:51.907 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$2baeb564] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 18:27:51.977 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 18:27:51.992 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 18:27:51.993 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration$$EnhancerBySpringCGLIB$$82e8ac00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-04-24 18:27:52.249 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-04-24 18:27:52.256 [main] [] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-24 18:27:52.258 [main] [] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-04-24 18:27:52.480 [main] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-24 18:27:52.481 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1574 ms
+2026-04-24 18:27:52.622 [main] [] DEBUG c.e.travelservice.common.filter.TraceIdFilter - Filter 'traceIdFilter' configured for use
+2026-04-24 18:27:54.603 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2026-04-24 18:27:54.603 [main] [] INFO  c.example.travelservice.config.WebMvcConfiguration - JWT拦截器已禁用，所有接口无需认证
+2026-04-24 18:27:55.159 [main] [] INFO  o.a.r.s.autoconfigure.RocketMQAutoConfiguration - a producer (boot-producer-group) init on namesrv 192.168.88.130:9876
+2026-04-24 18:27:56.773 [main] [] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-24 18:27:56.809 [main] [] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2026-04-24 18:27:56.823 [main] [] INFO  c.e.t.application.TravelServiceApplication - Started TravelServiceApplication in 6.275 seconds (JVM running for 7.472)
+2026-04-24 18:27:56.840 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-24 18:27:57.200 [scheduling-1] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-24 18:27:57.533 [RMI TCP Connection(1)-192.168.36.252] [] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24 18:27:57.533 [RMI TCP Connection(1)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-24 18:27:57.535 [RMI TCP Connection(1)-192.168.36.252] [] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-24 18:37:51.392 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m24s10ms862µs200ns).
+2026-04-24 18:39:50.648 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s255ms624µs400ns).
+2026-04-24 18:51:36.034 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s233ms504µs700ns).
+2026-04-24 20:13:23.186 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m12s105ms630µs900ns).
+2026-04-24 20:41:09.059 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m45s776ms67µs900ns).

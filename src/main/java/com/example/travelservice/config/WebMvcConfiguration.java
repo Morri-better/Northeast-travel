@@ -22,19 +22,23 @@ import java.util.List;
 @Slf4j
 public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
-    @Autowired
-    private JwtTokenAdminInterceptor jwtTokenAdminInterceptor;
+    // JWT拦截器已临时禁用 - Apifox测试无需token
+    // @Autowired
+    // private JwtTokenAdminInterceptor jwtTokenAdminInterceptor;
 
     /**
      * 注册自定义拦截器
+     * JWT拦截器已临时禁用，方便Apifox测试
      *
      * @param registry
      */
     protected void addInterceptors(InterceptorRegistry registry) {
         log.info("开始注册自定义拦截器...");
-        registry.addInterceptor(jwtTokenAdminInterceptor)
-                .addPathPatterns("/**")
-                .excludePathPatterns("/auth/login/password", "/auth/captcha");
+        // JWT拦截器已临时禁用 - Apifox测试无需token
+        // registry.addInterceptor(jwtTokenAdminInterceptor)
+        //         .addPathPatterns("/**")
+        //         .excludePathPatterns("/auth/login/password", "/auth/captcha");
+        log.info("JWT拦截器已禁用，所有接口无需认证");
     }
 
     /**

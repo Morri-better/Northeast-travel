@@ -16,7 +16,7 @@ import com.example.travelservice.entity.Payment;
 import com.example.travelservice.mapper.OrderMapper;
 import com.example.travelservice.mapper.PaymentMapper;
 import com.example.travelservice.repository.PaymentRepository;
-import com.example.travelservice.service.OutboxEventService;
+// import com.example.travelservice.service.OutboxEventService; // MQ相关已临时禁用
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,7 +31,7 @@ public class PaymentService {
     private final OrderService orderService;
     private final PaymentMapper paymentMapper;
     private final OrderMapper orderMapper;
-    private final OutboxEventService outboxEventService;
+//    private final OutboxEventService outboxEventService; // MQ相关已临时禁用
     
     /**
      * 创建支付记录
@@ -160,13 +160,14 @@ public class PaymentService {
                     "订单状态异常，无法完成支付：orderId=" + payment.getOrderId());
         }
 
+        // MQ功能已临时禁用 - Outbox事件保存已注释
         Order order = orderMapper.selectById(payment.getOrderId());
-        outboxEventService.savePaymentSuccessEvent(
-                payment.getPayNo(),
-                order.getId(),
-                order.getProductId(),
-                order.getQuantity()
-        );
+        // outboxEventService.savePaymentSuccessEvent(
+        //         payment.getPayNo(),
+        //         order.getId(),
+        //         order.getProductId(),
+        //         order.getQuantity()
+        // );
 
         return PaymentCallbackResponse.builder()
                 .orderId(order.getId())

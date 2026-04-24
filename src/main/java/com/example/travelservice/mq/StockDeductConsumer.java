@@ -14,6 +14,8 @@ import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 
+// MQ消费者已临时禁用 - 如需启用请取消注释
+/*
 @Slf4j
 @Component
 @RequiredArgsConstructor
@@ -54,3 +56,4 @@ public class StockDeductConsumer implements RocketMQListener<MessageExt> {
         }
     }
 }
+*/
